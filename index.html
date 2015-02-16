@@ -4,6 +4,7 @@
 
 <!-- Include meta tag to ensure proper rendering and touch zooming -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
 
 <!-- Include jQuery Mobile stylesheets -->
 <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
@@ -17,19 +18,59 @@
 </head>
 <body>
 
-<div data-role="page" id="pageone">
+<div data-role="page" id="inicio">
   <div data-role="header">
   <h1>CPIFP Los Enlaces</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-  <p>Welcome!</p>
+  <h2>¡Bienvenido!</h2>
+  <p>Para comenzar a calificar, introduce tu usuario y password</p>
+  <form method="post" href="#buscaAlumno">
+	<div data-role="containerIntro">
+		
+		<label for="usuario">Usuario:</label>
+		<input type="text" name="usuario" id="usuario" value="">
+		<br/>
+		<label for="password">Password:</label>
+		<input type="password" name="password" id="password" value="">
+
+  	</div>
+	<input onclick="aBuscaAlumno" id="botonConfirmarUsuario" type="submit" class="ui-btn" data-icon="check" data-iconpos="right" data-transition="slide" value="Continuar">
+
+</form>
+</div>
+
+<div data-role="page" id="buscaAlumno">
+  <div data-role="header">
+  <h1>CPIFP Los Enlaces</h1>
   </div>
 
-  <div data-role="footer">
-  <h1>Footer Text</h1>
-  </div>
-</div> 
+<div data-role="containerCurso">
+	<form method="post" action="">
+   <label for="containerCurso" class="select">Selecciona un curso:</label>
+   <select name="containerCurso" id="selectCurso">
+      <option value=""></option>
+
+   </select>
+</div>
+
+  <div data-role="main" class="ui-content">
+  <h2>¿A qué alumno desea calificar?</h2>
+
+
+
+	Seleccione al alumno	
+  <input type="password" name="pass" value=""><br/>
+<br/>
+
+<div data-role="containerBuscaAlumno">
+    <label for="busca">Búsqueda de alumn@:</label>
+    <input type="search" name="busca" id="busca" value="" />
+</div>
+</div>
+
+
 
 </body>
 </html>
