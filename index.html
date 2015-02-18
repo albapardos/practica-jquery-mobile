@@ -38,13 +38,13 @@
     </div>
     
     <br/>
-      <a data-role="button" href="#buscaAlumno" data-icon="check" data-iconpos="right" data-transition="slide">Continuar</a>
+      <a data-role="button" href="#buscaCurso" data-icon="check" data-iconpos="right" data-transition="slide">Continuar</a>
 
   </div>
 </div>
 
-<!-- Página 2 - Buscamos al alumno al que queremos calificar -->
-<div data-role="page" id="buscaAlumno">
+<!-- Página 2 - Buscamos el curso de los proyectos a calificar -->
+<div data-role="page" id="buscaCurso">
   	<div data-role="header">
     	<h1>CPIFP Los Enlaces</h1>
   	</div>
@@ -56,37 +56,59 @@
 			<div data-role="collapsible" data-filtertext="ImagenYSonido">
 	            <h3>Comercio y Marketing</h3>
 	            <ul data-role="listview" data-inset="false">
-	                <li><a href="">Actividades Comerciales</a></li>
-	                <li><a href="">Comercio</a></li>
-	                <li><a href="">Comercio Internacional</a></li>
-	                <li><a href="">Gestión de ventas y espacios comerciales</a></li>
-	                <li><a href="">Transporte y Logística</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Actividades Comerciales</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Comercio</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Comercio Internacional</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Gestión de ventas y espacios comerciales</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Transporte y Logística</a></li>
 	            </ul>
 	        </div>
 		    <div data-role="collapsible" data-filtertext="ImagenYSonido">
 	            <h3>Imagen y Sonido</h3>
 	            <ul data-role="listview" data-inset="false">
-	                <li><a href="">Laboratorio de Imagen</a></li>
-	                <li><a href="">Video Disc-Jockey y Sonido</a></li>
-	                <li><a href="">Animaciones 3D, Juegos y Entornos Interactivos</a></li>
-	                <li><a href="">ILuminación, Captación y Tratamiento de Imagen</a></li>
-	                <li><a href="">Producción de Audiovisuales y Espectáculos</a></li>
-	                <li><a href="">Realización de PRoyectos Audiovisuales y Espectáculos</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Laboratorio de Imagen</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Video Disc-Jockey y Sonido</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Animaciones 3D, Juegos y Entornos Interactivos</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">ILuminación, Captación y Tratamiento de Imagen</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Producción de Audiovisuales y Espectáculos</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Realización de PRoyectos Audiovisuales y Espectáculos</a></li>
 	            </ul>
 	        </div>
 	        <div data-role="collapsible" data-filtertext="InformaticaYComunicaciones">
 	            <h3>Informática y Comunicaciones</h3>
 	            <ul data-role="listview" data-inset="false">
-	                <li><a href="">Sistemas Microinformáticos y Redes</a></li>
-	                <li><a href="">Administración de SIstemas Informáticos en Red</a></li>
-	                <li><a href="">Desarrollo de Aplicaciones Multiplataforma</a></li>
-	                <li><a href="">Desarrollo de Aplicaciones Web</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Sistemas Microinformáticos y Redes</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Administración de SIstemas Informáticos en Red</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Desarrollo de Aplicaciones Multiplataforma</a></li>
+	                <li><a href="#buscaAlumno" data-transition="slideup">Desarrollo de Aplicaciones Web</a></li>
 	            </ul>
 	        </div>
 	    </div>
 	</div>
 </div>
 
+
+<!-- Página 3 - Buscamos el alumno de los proyectos a calificar -->
+<div data-role="page" id="buscaAlumno">
+  	<div data-role="header">
+    	<h1>CPIFP Los Enlaces</h1>
+  	</div>
+
+  	<div data-role="main" class="ui-content">
+    
+    	<label for="containerCurso" class="select">Alumno a calificar:</label>      
+		<form>
+    		<input data-type="search" id="filterControlgroup-input">
+		</form>
+		<div data-role="controlgroup" data-filter="true" data-input="#filterControlgroup-input">
+    		<a href="#formularioCalificacion" class="ui-btn ui-shadow ui-corner-all">Andrea Lale Mocha</a>
+    		<a href="#formularioCalificacion" class="ui-btn ui-shadow ui-corner-all">Mario Ferrán Romero</a>
+    		<a href="#formularioCalificacion" class="ui-btn ui-shadow ui-corner-all" data-filtertext="some text">Paula Core Nela</a>
+    		<a href="#formularioCalificacion" class="ui-btn ui-shadow ui-corner-all">Dario Sainz Roman</a>
+    		<a href="#formularioCalificacion" class="ui-btn ui-shadow ui-corner-all">Elena Calen Zuri</a>
+		</div>
+	</div>
+</div>
 
 
 </body>
