@@ -18,57 +18,55 @@
 </head>
 <body>
 
+<!-- Página 1 - Identificación del usuario -->
 <div data-role="page" id="inicio">
   <div data-role="header">
-  <h1>CPIFP Los Enlaces</h1>
+    <h1>CPIFP Los Enlaces</h1>
   </div>
 
   <div data-role="main" class="ui-content">
-  <h2>¡Bienvenido!</h2>
-  <p>Para comenzar a calificar, introduce tu usuario y password</p>
-  <form method="post" href="#buscaAlumno">
-	<div data-role="containerIntro">
-		
-		<label for="usuario">Usuario:</label>
-		<input type="text" name="usuario" id="usuario" value="">
-		<br/>
-		<label for="password">Password:</label>
-		<input type="password" name="password" id="password" value="">
+    <h2>¡Bienvenido!</h2>
+    <p>Para comenzar a calificar, introduce tu usuario y password</p>
+    <div>
+      <form>
+  		  <label for="usuario">Usuario:</label>
+  		  <input type="text" name="usuario" id="usuario" value="">
 
-  	</div>
-	<input onclick="aBuscaAlumno" id="botonConfirmarUsuario" type="submit" class="ui-btn" data-icon="check" data-iconpos="right" data-transition="slide" value="Continuar">
+  		  <label for="password">Password:</label>
+  		  <input type="password" name="password" id="password" value="">
+      </form>
+    </div>
+    
+    <br/>
+      <a data-role="button" href="#buscaAlumno" data-icon="check" data-iconpos="right" data-transition="slide">Continuar</a>
 
-</form>
+  </div>
 </div>
 
+<!-- Página 2 - Buscamos al alumno al que queremos calificar -->
 <div data-role="page" id="buscaAlumno">
   <div data-role="header">
-  <h1>CPIFP Los Enlaces</h1>
+    <h1>CPIFP Los Enlaces</h1>
   </div>
 
-<div data-role="containerCurso">
-	<form method="post" action="">
-   <label for="containerCurso" class="select">Selecciona un curso:</label>
-   <select name="containerCurso" id="selectCurso">
-      <option value=""></option>
-
-   </select>
-</div>
-
   <div data-role="main" class="ui-content">
-  <h2>¿A qué alumno desea calificar?</h2>
+    <form> 
+      <label for="containerCurso" class="select">Selecciona un curso:</label>
+
+<ul data-role="listview" data-inset="true" >
+  <li data-role="list-divider">Informática</li>
+  <li>Informática</li>
+  <li data-role="list-divider">Imagen</li>
+  <li>Informática</li>
+</ul>
+
+ <a data-role="button" href="#inicio" data-icon="check" data-transition="flow">Continuar</a>
 
 
-
-	Seleccione al alumno	
-  <input type="password" name="pass" value=""><br/>
-<br/>
-
-<div data-role="containerBuscaAlumno">
-    <label for="busca">Búsqueda de alumn@:</label>
-    <input type="search" name="busca" id="busca" value="" />
+    </form>
+  </div>
 </div>
-</div>
+
 
 
 
