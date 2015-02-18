@@ -26,7 +26,12 @@
 
   <div data-role="main" class="ui-content">
     <h2>¡Bienvenido!</h2>
-    <p>Para comenzar a calificar, introduce tu usuario y password</p>
+  
+	<a href="#popupInfo1" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-right ui-icon-info ui-btn-icon-notext" title="Info"></a></p>
+	<div data-role="popup" id="popupInfo1" class="ui-content" data-theme="a" style="max-width:350px;">
+ 		<p>Para comenzar introduzca su usuario y contraseña, después presione "Continuar"</p>
+	</div>
+
     <div>
       <form>
   		  <label for="usuario">Usuario:</label>
@@ -46,11 +51,16 @@
 <!-- Página 2 - Buscamos el curso de los proyectos a calificar -->
 <div data-role="page" id="buscaCurso">
   	<div data-role="header">
-    	<h1>CPIFP Los Enlaces</h1>
+    	<h1>CPIFP Los Enlaces - Selección de Curso</h1>
   	</div>
 
   	<div data-role="main" class="ui-content">
     
+		<a href="#popupInfo2" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-right ui-icon-info ui-btn-icon-notext" title="Info"></a></p>
+		<div data-role="popup" id="popupInfo2" class="ui-content" data-theme="a" style="max-width:350px;">
+ 			<p>1.- Seleccione la familia profesional<br/>2.- Seleccione el ciclo</p>
+		</div>
+
     	<label for="containerCurso" class="select">Selecciona un curso:</label>      
 		<div data-role="collapsibleset" data-corners="false" data-theme="a" data-content-theme="a">
 			<div data-role="collapsible" data-filtertext="ImagenYSonido">
@@ -91,25 +101,83 @@
 <!-- Página 3 - Buscamos el alumno de los proyectos a calificar -->
 <div data-role="page" id="buscaAlumno">
   	<div data-role="header">
-    	<h1>CPIFP Los Enlaces</h1>
+    	<h1>CPIFP Los Enlaces - Selección de Alumn@</h1>
   	</div>
 
   	<div data-role="main" class="ui-content">
     
+		<a href="#popupInfo3" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-right ui-icon-info ui-btn-icon-notext" title="Info"></a></p>
+		<div data-role="popup" id="popupInfo3" class="ui-content" data-theme="a" style="max-width:350px;">
+ 			<p>Puede usar el cuadro de búsqueda para buscar de forma más ágil al alumno a calificar</p>
+		</div>
+
     	<label for="containerCurso" class="select">Alumno a calificar:</label>      
 		<form>
-    		<input data-type="search" id="filterControlgroup-input">
+    		<input data-type="search" id="filterControlgroup-input" placeholder="---Introduce nombre a buscar---">
 		</form>
 		<div data-role="controlgroup" data-filter="true" data-input="#filterControlgroup-input">
-    		<a href="#formularioCalificacion" class="ui-btn ui-shadow ui-corner-all">Andrea Lale Mocha</a>
-    		<a href="#formularioCalificacion" class="ui-btn ui-shadow ui-corner-all">Mario Ferrán Romero</a>
-    		<a href="#formularioCalificacion" class="ui-btn ui-shadow ui-corner-all" data-filtertext="some text">Paula Core Nela</a>
-    		<a href="#formularioCalificacion" class="ui-btn ui-shadow ui-corner-all">Dario Sainz Roman</a>
-    		<a href="#formularioCalificacion" class="ui-btn ui-shadow ui-corner-all">Elena Calen Zuri</a>
+    		<a href="#calificaciones" class="ui-btn ui-shadow ui-corner-all">Andrea Lale Mocha</a>
+    		<a href="#calificaciones" class="ui-btn ui-shadow ui-corner-all">Mario Ferrán Romero</a>
+    		<a href="#calificaciones" class="ui-btn ui-shadow ui-corner-all">Paula Core Nela</a>
+    		<a href="#calificaciones" class="ui-btn ui-shadow ui-corner-all">Dario Sainz Roman</a>
+    		<a href="#calificaciones" class="ui-btn ui-shadow ui-corner-all">Elena Calen Zuri</a>
 		</div>
 	</div>
 </div>
 
 
+<!-- Página 4 - Formulario de calificación del alumno -->
+<div data-role="page" id="calificaciones">
+  	<div data-role="header">
+    	<h1>CPIFP Los Enlaces - Contenidos a calificar</h1>
+  	</div>
+	 
+	<div data-role="main" class="ui-content">
+  	
+
+  		<a href="#popupInfo4" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-right ui-icon-info ui-btn-icon-notext" title="Info"></a></p>
+		<div data-role="popup" id="popupInfo4" class="ui-content" data-theme="a" style="max-width:350px;">
+ 			<p>Seleccione el apartado a calificar o introduzca la nota directamente en el cuadro de texto</p>
+		</div>
+
+		<div class="ui-grid-a">
+
+			<a href="#popupInfo5" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Info"></a></p>
+			<div data-role="popup" id="popupInfo5" class="ui-content" data-theme="a" style="max-width:350px;">
+ 				<p>No se encuentran disponibles la calificación de los siguientes apartados:
+ 				<br/>
+ 				<ul>
+ 					<li>Contenido del Proyecto</li>
+ 					<li>Calidad de Presentación</li>
+ 				</ul>
+ 				Por favor, ponga la nota directamente en el cuadro de texto.</p>
+			</div>
+
+    		<div class="ui-block-a"><a data-role="button" href="#" data-icon="edit" data-iconpos="bottom" data-transition="slide" class="ui-state-disabled">Contenido del Proyecto</a></div>
+    		<div class="ui-block-b">
+    			<form>
+  					<input type="text" name="usuario" id="usuario" placeholder="Introduzca la nota">
+      			</form>
+    		</div>
+   
+    		<div class="ui-block-a"><a data-role="button" href="#" data-icon="eye" data-iconpos="bottom" data-transition="slide" class="ui-state-disabled">Calidad de Presentación</a></div>
+    		<div class="ui-block-b">
+    			<form>
+  					<input type="text" name="usuario" id="usuario" placeholder="Introduzca la nota">
+      			</form>
+    		</div>
+   
+   			
+
+   			<div class="ui-block-a"><a data-role="button" href="#expresionOral1" data-icon="comment" data-iconpos="bottom" data-transition="slide">Expresión Oral</a></div>
+    		<div class="ui-block-b">
+    			<form>
+  					<input type="text" name="usuario" id="usuario" placeholder="Introduzca la nota">
+      			</form>
+    		</div>
+
+		</div>
+	</div>
+</div>
 </body>
 </html>
