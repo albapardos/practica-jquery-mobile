@@ -45,28 +45,47 @@
 
 <!-- Página 2 - Buscamos al alumno al que queremos calificar -->
 <div data-role="page" id="buscaAlumno">
-  <div data-role="header">
-    <h1>CPIFP Los Enlaces</h1>
-  </div>
+  	<div data-role="header">
+    	<h1>CPIFP Los Enlaces</h1>
+  	</div>
 
-  <div data-role="main" class="ui-content">
-    <form> 
-      <label for="containerCurso" class="select">Selecciona un curso:</label>
-
-<ul data-role="listview" data-inset="true" >
-  <li data-role="list-divider">Informática</li>
-  <li>Informática</li>
-  <li data-role="list-divider">Imagen</li>
-  <li>Informática</li>
-</ul>
-
- <a data-role="button" href="#inicio" data-icon="check" data-transition="flow">Continuar</a>
-
-
-    </form>
-  </div>
+  	<div data-role="main" class="ui-content">
+    
+    	<label for="containerCurso" class="select">Selecciona un curso:</label>      
+		<div data-role="collapsibleset" data-corners="false" data-theme="a" data-content-theme="a">
+			<div data-role="collapsible" data-filtertext="ImagenYSonido">
+	            <h3>Comercio y Marketing</h3>
+	            <ul data-role="listview" data-inset="false">
+	                <li><a href="">Actividades Comerciales</a></li>
+	                <li><a href="">Comercio</a></li>
+	                <li><a href="">Comercio Internacional</a></li>
+	                <li><a href="">Gestión de ventas y espacios comerciales</a></li>
+	                <li><a href="">Transporte y Logística</a></li>
+	            </ul>
+	        </div>
+		    <div data-role="collapsible" data-filtertext="ImagenYSonido">
+	            <h3>Imagen y Sonido</h3>
+	            <ul data-role="listview" data-inset="false">
+	                <li><a href="">Laboratorio de Imagen</a></li>
+	                <li><a href="">Video Disc-Jockey y Sonido</a></li>
+	                <li><a href="">Animaciones 3D, Juegos y Entornos Interactivos</a></li>
+	                <li><a href="">ILuminación, Captación y Tratamiento de Imagen</a></li>
+	                <li><a href="">Producción de Audiovisuales y Espectáculos</a></li>
+	                <li><a href="">Realización de PRoyectos Audiovisuales y Espectáculos</a></li>
+	            </ul>
+	        </div>
+	        <div data-role="collapsible" data-filtertext="InformaticaYComunicaciones">
+	            <h3>Informática y Comunicaciones</h3>
+	            <ul data-role="listview" data-inset="false">
+	                <li><a href="">Sistemas Microinformáticos y Redes</a></li>
+	                <li><a href="">Administración de SIstemas Informáticos en Red</a></li>
+	                <li><a href="">Desarrollo de Aplicaciones Multiplataforma</a></li>
+	                <li><a href="">Desarrollo de Aplicaciones Web</a></li>
+	            </ul>
+	        </div>
+	    </div>
+	</div>
 </div>
-
 
 
 
