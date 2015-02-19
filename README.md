@@ -25,21 +25,6 @@ Los datos en los que nos  basaremos corresponden a la Guía de calificación ora
 
 **EXPRESIÓN ORAL  (Máximo 2,5 ptos.  Representa el 25%)**
 
-Aspectos a valorar en la expresión oral:
-- **Entrada del alumno**
-- **Indumentaria**
-- **Introducción:** ¿Es atractiva? ¿Queda claro el proyecto?
-- **Desarrollo:** Orden en las ideas. Claridad en la exposición. Aclaración de términos técnicos
-- **Conclusión:** ¿Queda claro el objetivo del proyecto? ¿Lo vende bien?
-- **Seguridad** en lo que expone. La presentación está trabajada (power -point otros)
-- **Entusiasmo** en lo que expone
-- **Expresión oral:**
-    - Entonación
-    - Volumen
-    - Velocidad
-    - Vacilación en la voz
-    - Pausas
-    - Utilización de muletillas
 - **Duración:** ¿Se adecua a lo estipulado?
 - **Lenguaje no verbal:**
     - Mirada: ¿dirige la mirada a todo el auditorio?

@@ -166,16 +166,298 @@
   					<input type="text" name="usuario" id="usuario" placeholder="Introduzca la nota">
       			</form>
     		</div>
-   
-   			
-
-   			<div class="ui-block-a"><a data-role="button" href="#expresionOral1" data-icon="comment" data-iconpos="bottom" data-transition="slide">Expresión Oral</a></div>
+   			<div class="ui-block-a"><a data-role="button" href="#expresionOral1" data-icon="comment" data-iconpos="bottom" data-transition="pop">Expresión Oral</a></div>
     		<div class="ui-block-b">
     			<form>
   					<input type="text" name="usuario" id="usuario" placeholder="Introduzca la nota">
       			</form>
     		</div>
 
+		</div>
+
+		<a href="#popupDialog" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-icon-delete ui-btn-icon-left">Desconectarse</a>
+		<div data-role="popup" id="popupDialog" data-dismissible="false" style="max-width:400px;">
+    		<div data-role="header">
+    			<h1>Desconectarse</h1>
+    		</div>
+    	<div role="main" class="ui-content">
+        	<h4 class="ui-title">¿Está seguro que desea desconectarse?</h4>
+        	<a href="#calificaciones" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">No</a>
+        	<a href="#inicio" class="ui-btn ui-corner-all ui-shadow ui-btn-inline" data-transition="flow">Sí</a>
+    	</div>
+</div>
+	</div>
+</div>
+
+<!-- Página 5 - Calificación de la expresión oral -parte1- -->
+<div data-role="page" id="expresionOral1">
+  	<div data-role="header">
+    	<h1>CPIFP Los Enlaces - Expresión oral (I)</h1>
+  	</div>
+
+  	<div data-role="main" class="ui-content">
+    
+		<a href="#popupInfo6" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-right ui-icon-info ui-btn-icon-notext" title="Info"></a></p>
+		<div data-role="popup" id="popupInfo6" class="ui-content" data-theme="a" style="max-width:350px;">
+ 			<p>En esta pantalla calificaremos las primeras impresiones que nos de el alumn@</p>
+		</div>
+	
+		<form>
+    		<label for="slider-10">Entrada del alumno:
+	    		<a href="#popupInfo7" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Info"></a>
+				<div data-role="popup" id="popupInfo7" class="ui-content" data-theme="a" style="max-width:350px;">
+	 				<p>Observaremos la entrada en la sala, forma de andar, seguridad en sus movimientos y preparación de la ponencia</p>
+				</div>
+			</label>
+    		<input type="range" name="slider-10" data-highlight="true" id="slider-10" min="0" max="10" step=".1" value="5">
+		
+		<br/>
+
+
+		    <fieldset id="indumentaria" data-role="controlgroup" data-type="horizontal">
+		        <legend>Indumentaria:</legend>
+		        <input type="radio" name="radio-choice-h-2" id="casual" checked="checked">
+		        <label for="casual">Casual</label>
+		        <input type="radio" name="radio-choice-h-2" id="formal" >
+		        <label for="formal">Formal</label>
+		        <input type="radio" name="radio-choice-h-2" id="informal" >
+		        <label for="informal">Informal</label>
+		        <input type="radio" name="radio-choice-h-2" id="sport">
+		        <label for="sport">Sport</label>
+		    </fieldset>
+		
+	
+			<fieldset id="intruduccion" data-role="controlgroup" data-iconpos="right">
+		        <legend>Introducción del proyecto:
+					<a href="#popupInfo8" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext" title="Info"></a></p>
+					<div data-role="popup" id="popupInfo8" class="ui-content" data-theme="a" style="max-width:350px;">
+	 					<p>Adjetivos con los que describirías la introducción del proyecto</p>
+					</div>
+
+		        </legend>
+		        <input type="checkbox" name="aburrida" id="aburrida">
+		        <label for="aburrida">Aburrida</label>
+		        <input type="checkbox" name="amena" id="amena">
+		        <label for="amena">Amena</label>
+		        <input type="checkbox" name="atractiva" id="atractiva">
+		        <label for="atractiva">Atractiva</label>
+		        <input type="checkbox" name="clara" id="clara">
+		        <label for="clara">Clara</label>
+				<input type="checkbox" name="desordenada" id="desordenada">
+		        <label for="desordenada">Desordenada</label>
+		        <input type="checkbox" name="divertida" id="divertida">
+		        <label for="divertida">Divertida</label>
+		        <input type="checkbox" name="escasa" id="escasa">
+		        <label for="escasa">Escasa</label>
+		        <input type="checkbox" name="infumable" id="infumable">
+		        <label for="infumable">Infumable</label>
+		        <input type="checkbox" name="interesante" id="interesante">
+		        <label for="interesante">Interesante</label>
+		        <input type="checkbox" name="mala" id="mala">
+		        <label for="mala">Mala</label>
+		    </fieldset>
+		</form>
+		
+		<div class="ui-alt-icon" align="center">
+    	<a href="#calificaciones" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"></a>
+    	<a href="#expresionOral2" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-notext ui-btn-inline" data-transition="slide"></a>
+		</div>
+	</div>
+</div>
+
+<!-- Página 6 - Calificación de la expresión oral -parte2- -->
+<div data-role="page" id="expresionOral2">
+  	<div data-role="header">
+    	<h1>CPIFP Los Enlaces - Expresión oral (II)</h1>
+  	</div>
+
+  	<div data-role="main" class="ui-content">
+    
+		<a href="#popupInfo9" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-right ui-icon-info ui-btn-icon-notext" title="Info"></a></p>
+		<div data-role="popup" id="popupInfo9" class="ui-content" data-theme="a" style="max-width:350px;">
+ 			<p>En esta pantalla calificaremos el desarrollo de la presentación del proyecto</p>
+		</div>
+	
+		<form>
+			Desarrollo:
+			<fieldset class="ui-grid-b">
+				<div class="ui-block-a">
+					<label for="slider2">¿Ideas ordenadas?</label>
+					<select name="slider2" id="ideas" data-role="slider">
+		    			<option value="no">No</option>
+		    			<option value="si">Sí</option>
+					</select>
+				</div>
+				<div class="ui-block-b">
+					<label for="slider2">¿Exposición clara?</label>
+					<select name="slider2" id="exposicion" data-role="slider">
+		    			<option value="no">No</option>
+		    			<option value="si">Sí</option>
+					</select>
+				</div>
+				<div class="ui-block-c">
+					<label for="slider2">¿Aclaración de términos técnicos?</label>
+					<select name="slider2" id="aclaracion" data-role="slider">
+		    			<option value="no">No</option>
+		    			<option value="si">Sí</option>
+					</select>
+				</div>
+			</fieldset>
+			<hr/>
+			Conclusión:
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-a">
+					<label for="slider2">¿Queda claro el objetivo del proyecto?</label>
+					<select name="slider2" id="objetivoClaro" data-role="slider">
+		    			<option value="no">No</option>
+		    			<option value="si">Sí</option>
+					</select>
+				</div>
+				<div class="ui-block-b">
+					<label for="slider2">¿Lo vende bien?</label>
+					<select name="slider2" id="vender" data-role="slider">
+		    			<option value="no">No</option>
+		    			<option value="si">Sí</option>
+					</select>
+				</div>
+			</fieldset>
+			<hr/>
+			<label for="slider-10">Seguridad en lo que expone:</label>
+    		<input type="range" name="slider-10" data-highlight="true" id="seguridad" min="0" max="10" step=".1" value="5">
+			<br/>
+			<label for="slider-10">Presentación trabajada:</label>
+    		<input type="range" name="slider-10" data-highlight="true" id="presentacion" min="0" max="10" step=".1" value="5">
+			<br/>
+    		<label for="slider-10">Entusiasmo:</label>
+    		<input type="range" name="slider-10" data-highlight="true" id="entusiasmo" min="0" max="10" step=".1" value="5">
+			<hr/>
+
+			Expresión oral:
+			<fieldset data-role="controlgroup" data-type="horizontal">
+			<fieldset class="ui-grid-a">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+			        	<legend>Entonación:</legend>
+			        	<input type="radio" name="entonacion" id="entonacion1" checked="checked">
+			        	<label for="entonacion1">Mala</label>
+			        	<input type="radio" name="entonacion" id="entonacion2" >
+			        	<label for="entonacion2">Regular</label>
+			        	<input type="radio" name="entonacion" id="entonacion3" >
+			        	<label for="entonacion3">Bien</label>
+			        </div>
+			        <div class="ui-block-b">
+						<legend>Volumen:</legend>
+			        	<input type="radio" name="volumen" id="volumen1" checked="checked">
+			        	<label for="volumen1">Bajo</label>
+			        	<input type="radio" name="volumen" id="volumen2" >
+			        	<label for="volumen2">Normal</label>
+			        	<input type="radio" name="volumen" id="volumen3" >
+			        	<label for="volumen3">Alto</label>
+			        </div>
+			        <div class="ui-block-a">
+			        	<legend>Velocidad</legend>
+			        	<input type="radio" name="velocidad" id="velocidad1" checked="checked">
+			        	<label for="velocidad1">Lento</label>
+			        	<input type="radio" name="velocidad" id="velocidad2" >
+			        	<label for="velocidad2">Normal</label>
+			        	<input type="radio" name="velocidad" id="velocidad3" >
+			        	<label for="velocidad3">Rápido</label>
+			        </div>
+			        <div class="ui-block-b">
+						<legend>Vacilación en la voz:</legend>
+			        	<input type="radio" name="vacilacion" id="vacilacion1" checked="checked">
+			        	<label for="vacilacion1">Ninguna</label>
+			        	<input type="radio" name="vacilacion" id="vacilacion2" >
+			        	<label for="vacilacion2">Media</label>
+			        	<input type="radio" name="vacilacion" id="vacilacion3" >
+			        	<label for="vacilacion3">Mucha</label>
+			        </div>
+			        <div class="ui-block-a">
+			        	<legend>Pausas:</legend>
+			        	<input type="radio" name="pausas" id="pausas1" checked="checked">
+			        	<label for="pausas1">Pocas</label>
+			        	<input type="radio" name="pausas" id="pausas2" >
+			        	<label for="pausas2">Normales</label>
+			        	<input type="radio" name="pausas" id="pausas3" >
+			        	<label for="pausas3">Muchas</label>
+			        </div>
+			        <div class="ui-block-b">
+						<legend>Utilización de muletillas:</legend>
+			        	<input type="radio" name="muletillas" id="muletillas1" checked="checked">
+			        	<label for="muletillas1">Ninguna</label>
+			        	<input type="radio" name="muletillas" id="muletillas2" >
+			        	<label for="muletillas2">Pocas</label>
+			        	<input type="radio" name="muletillas" id="muletillas3" >
+			        	<label for="muletillas3">Muchas</label>
+			        </div>
+		        </div>
+	    	</fieldset>
+		</form>
+
+		<br/><br/>
+		<div class="ui-alt-icon" align="center">
+    	<a href="#expresionOral1" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-btn-inline" data-transition="slide" data-direction="reverse"></a>
+    	<a href="#calificaciones" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"></a>
+    	<a href="#expresionOral3" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-r ui-btn-icon-notext ui-btn-inline" data-transition="slide"></a>
+		</div>
+	</div>
+</div>
+
+
+<!-- Página 7 - Calificación de la expresión oral -parte3- -->
+<div data-role="page" id="expresionOral3">
+  	<div data-role="header">
+    	<h1>CPIFP Los Enlaces - Expresión oral (III)</h1>
+  	</div>
+
+  	<div data-role="main" class="ui-content">
+    
+		<a href="#popupInfo10" data-rel="popup" data-transition="pop" class="my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-right ui-icon-info ui-btn-icon-notext" title="Info"></a></p>
+		<div data-role="popup" id="popupInfo10" class="ui-content" data-theme="a" style="max-width:350px;">
+ 			<p>Una vez terminada la exposición del proyecto analizaremos la duración, el lenguaje no verbal y la atención hacia el público además de la resolución de dudas</p>
+		</div>
+	
+		<form>
+			Duración:
+			<label for="duracion">¿Se adecúa a lo estipulado?</label>
+    		<input type="range" name="slider-10" data-highlight="true" id="duracion" min="0" max="10" step=".1" value="5">
+			<hr><br/>
+			Lenguaje no verbal:
+			<label for="mirada">¿Dirige la mirada a todo el auditorio?</label>
+    		<input type="range" name="slider-10" data-highlight="true" id="mirada" min="0" max="10" step=".1" value="5">
+    		<label for="facial">Expresión facial (sonrisa, muecas, ...)</label>
+    		<input type="range" name="slider-10" data-highlight="true" id="facial" min="0" max="10" step=".1" value="5">
+    		<label for="duracion">¿Se adecúa a lo estipulado?</label>
+    		<input type="range" name="slider-10" data-highlight="true" id="duracion" min="0" max="10" step=".1" value="5">
+		
+			<fieldset id="posicionCorporal" data-role="controlgroup" data-type="horizontal">
+		        <legend>Posición corporal</legend>
+		        <input type="radio" name="posicionCorporal" id="correcta" checked="checked">
+		        <label for="correcta">Correcta</label>
+		        <input type="radio" name="posicionCorporal" id="encorvado" >
+		        <label for="encorvado">Encorvado</label>
+		        <input type="radio" name="posicionCorporal" id="movimientoConstante" >
+		        <label for="movimientoConstante">Movimiento constante</label>
+		        <input type="radio" name="posicionCorporal" id="relajado">
+		        <label for="relajado">Demasiado relajado</label>
+		    </fieldset>
+
+		    <label for="tics">Tics, gestos nerviosos</label>
+    		<input type="range" name="slider-10" data-highlight="true" id="tics" min="0" max="10" step=".1" value="5">
+    		<hr><br/>
+    		Atención al público:
+    		<label for="atencion">¿Logra atraer la atención del público?</label>
+    		<input type="range" name="slider-10" data-highlight="true" id="atencion" min="0" max="10" step=".1" value="5">
+    		<hr><br/>
+    		Preguntas realizadas
+    		<label for="preguntas">¿Responde de forma coherente?</label>
+    		<input type="range" name="slider-10" data-highlight="true" id="preguntas" min="0" max="10" step=".1" value="5">
+    	
+		</form>
+		<br/><br/>
+		<div class="ui-alt-icon" align="center">
+    	<a href="#expresionOral2" class="ui-btn ui-shadow ui-corner-all ui-icon-carat-l ui-btn-icon-notext ui-btn-inline" data-transition="slide" data-direction="reverse"></a>
+    	<a href="#calificaciones" class="ui-btn ui-shadow ui-corner-all ui-icon-bars ui-btn-icon-notext ui-btn-inline"></a>
 		</div>
 	</div>
 </div>
